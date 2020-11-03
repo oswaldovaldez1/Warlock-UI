@@ -1,0 +1,219 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  &.fixed {
+    width: 100%;
+  }
+  & form{
+    margin: 0;
+    padding: 0;
+  }
+  & .form-group{
+    flex-wrap: nowrap;
+    margin: 0px;
+  }
+  & .navbar-collapse{
+    overflow: initial;
+    margin: 5px;
+  }
+}
+
+.btn-outline-dark.navbar-toggler {
+  color: $dark-color-70 !important;
+  background-color: transparent !important;
+}
+.btn-outline-light.navbar-toggler {
+  color: $light-color-70 !important;
+  background-color: transparent !important;
+}
+[class^="navbar-expand-"],
+[class*="navbar-expand-"] {
+  .form-control {
+    max-width: 320px;
+  }
+}
+.navbar-expand-xl {
+  .navbar-toggler {
+    @include media(xs) {
+      display: block;
+    }
+    @include media(xl) {
+      display: none;
+    }
+  }
+  & .collapse.navbar-collapse {
+    @include media(xs) {
+      display: none;
+      width: 100%;
+    }
+    @include media(xl) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    ul.navbar-nav {
+      display: flex;
+      & li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      @include media(xs) {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      @include media(xl) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.navbar-expand-lg {
+  .navbar-toggler {
+    @include media(xs) {
+      display: block;
+    }
+    @include media(lg) {
+      display: none;
+    }
+  }
+  & .collapse.navbar-collapse {
+    @include media(xs) {
+      display: none;
+      width: 100%;
+    }
+    @include media(lg) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    ul.navbar-nav {
+      display: flex;
+      & li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      @include media(xs) {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      @include media(lg) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.navbar-expand-md {
+  .navbar-toggler {
+    @include media(xs) {
+      display: block;
+    }
+    @include media(md) {
+      display: none;
+    }
+  }
+  & .collapse.navbar-collapse {
+    @include media(xs) {
+      display: none;
+      width: 100%;
+    }
+    @include media(md) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    ul.navbar-nav {
+      display: flex;
+      & li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      @include media(xs) {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      @include media(md) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.navbar-expand-sm {
+  .navbar-toggler {
+    @include media(xs) {
+      display: block;
+    }
+    @include media(sm) {
+      display: none;
+    }
+  }
+  & .collapse.navbar-collapse {
+    @include media(xs) {
+      display: none;
+      width: 100%;
+    }
+    @include media(sm) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+    ul.navbar-nav {
+      display: flex;
+      & li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      @include media(xs) {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      @include media(sm) {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.navbar-light {
+  color: $dark-color;
+  & .disabled {
+    color: $dark-color-30;
+  }
+  & .nav-item {
+    color: $dark-color-70;
+    &:hover {
+      color: $dark-color-90;
+    }
+  }
+}
+
+.navbar-dark {
+  color: $light-color;
+  & .disabled {
+    color: $light-color-30;
+  }
+
+  & .nav-item {
+    color: $light-color-70;
+    &:hover {
+      color: $light-color-90;
+    }
+  }
+}
+
+.collapse-block {
+  display: block !important;
+}
+
+.navbar-brand {
+  animation-name: fadeInUp;
+  animation-duration: 4s;
+}

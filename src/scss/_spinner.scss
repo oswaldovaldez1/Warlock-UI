@@ -1,0 +1,77 @@
+.spinner-border {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  transform: scale(0.6);
+
+  &::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    clip: rect(0, 4.5em, 100px, 0);
+    border-radius: 50%;
+    border: 0.45em solid $teal-500;
+    box-sizing: border-box;
+
+    animation: rotate-spinner 0.75s linear infinite;
+  }
+  &.primary {
+    &::before {
+      border-color: $primary-color;
+    }
+  }
+  &.secondary {
+    &::before {
+      border-color: $secondary-color;
+    }
+  }
+  &.info {
+    &::before {
+      border-color: $info-color;
+    }
+  }
+  &.warning {
+    &::before {
+      border-color: $warning-color;
+    }
+  }
+  &.danger {
+    &::before {
+      border-color: $danger-color;
+    }
+  }
+  &.success {
+    &::before {
+      border-color: $success-color;
+    }
+  }
+  &.dark {
+    &::before {
+      border-color: $dark-color;
+    }
+  }
+  &.light {
+    &::before {
+      border-color: $light-color;
+    }
+  }
+  & .visually-hidden {
+    display: none;
+  }
+}
+
+@keyframes rotate-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

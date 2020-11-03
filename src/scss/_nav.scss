@@ -1,0 +1,28 @@
+ul.nav {
+  display: flex;
+  & li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include media(xs) {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  @include media(sm) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @include media(md) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @include media(lg) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  @include media(xl) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

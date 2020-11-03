@@ -1,0 +1,43 @@
+.container
+  button.btn.btn-primary(type="button", data-toggle="modal", data-target="#exampleModal").
+    
+    Modal fade
+    
+  button.btn.btn-primary(type="button", data-toggle="modal", data-target="#exampleModal2").
+    
+    Modal zoom
+    
+  .modal.fade#exampleModal(tabindex="-1")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title.h5 Modal title
+          button.btn-close.fa.fa-times(type="button", data-dismiss="modal", aria-label="Close")
+        .modal-body
+          p Modal body text goes here.
+        .modal-footer
+          button.btn.btn-secondary.btn-close(type="button", data-dismiss="modal").
+            
+            Close
+            
+          button.btn.btn-primary(type="button").
+            
+            Save changes
+            
+  .modal.zoom#exampleModal2(tabindex="-1")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title.h5 Modal title
+          button.btn-close.fa.fa-times(type="button", data-dismiss="modal", aria-label="Close")
+        .modal-body
+          p Modal body text goes here.
+        .modal-footer
+          button.btn.btn-secondary.btn-close(type="button", data-dismiss="modal").
+            
+            Close
+            
+          button.btn.btn-primary(type="button").
+            
+            Save changes
+            

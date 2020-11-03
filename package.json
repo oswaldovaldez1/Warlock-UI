@@ -1,0 +1,31 @@
+{
+  "name": "warlock-ui",
+  "version": "0.0.1",
+  "description": "Componentes de tailwind-css en scss y libreria js desarrollada en typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "sass src/scss/main.scss public/css/main.css --no-source-map",
+    "sass:prod": "sass src/scss/main.scss public/css/main.min.css --no-source-map --style compressed",
+    "sass:watch": "sass --watch src/scss/main.scss public/css/main.css --no-source-map",
+    "ts:watch": "tsc --build tsconfig.json --watch",
+    "ts:build": "tsc --build tsconfig.json",
+    "ts:prod": "tsc --build tsconfig.json && uglifyjs public/js/warlock.js --compress --mangle --output public/js/warlock.min.js",
+    "pug:watch":"pug src/pug/*.pug -o public/ --watch",
+    "pug:prod":"pug src/pug/*.pug -o public/"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "js",
+    "typescript",
+    "pug",
+    "html"
+  ],
+  "author": "Warlock",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

@@ -1,0 +1,9 @@
+.collapse {
+  margin: 10px;
+  overflow: hidden;
+  //transition: max-height 0.15s ease-out;
+}
+
+.collapse.show {
+  //transition: max-height 0.25s ease-in;
+}

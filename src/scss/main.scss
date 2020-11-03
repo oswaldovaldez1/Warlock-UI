@@ -1,0 +1,62 @@
+// @import "../../node_modules/@danielc7150/tailwind-scss/index";
+// @import "../../ant/node_modules/tailwind-sass/index";
+@import "tailwind-scss/index";
+@import "colors";
+@import "background";
+@import "widths.scss";
+@import "var";
+@import "alert";
+@import "badge";
+@import "breadcrumb";
+@import "buttons";
+@import "flexboxgrid";
+@import "card";
+@import "form/form";
+@import "avatar";
+@import "bar";
+@import "dropdown";
+@import "nav";
+@import "navbars";
+@import "modal";
+@import "sidebar";
+@import "pagination";
+@import "spinner";
+@import "tooltip";
+@import "animations";
+//@import "popover";
+@import "collapse";
+@import "carousel";
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+  overflow-y: auto;
+}
+
+.container,
+.container-fluid {
+  padding-top: 1rem;
+}
+.row {
+  padding-top: 1rem;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  padding-top: 1rem;
+}
+#menuElements,
+#render {
+  //overflow: hidden;
+  //height: 87vh;
+  //overflow-y: auto;
+}
+
+// .link-url:hover{
+//   background-color: $light-color-10;
+//   //display:flex;
+// }

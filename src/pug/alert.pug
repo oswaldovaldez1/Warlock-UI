@@ -1,0 +1,72 @@
+.container
+  div(class="alert alert-primary",role="alert") A simple primary alert—check it out!
+  div(class="alert alert-secondary",role="alert") A simple secondary alert—check it out!
+  div(class="alert alert-info",role="alert") A simple info alert—check it out!
+  div(class="alert alert-danger",role="alert") A simple danger alert—check it out!
+  div(class="alert alert-warning",role="alert") A simple warning alert—check it out!
+  div(class="alert alert-success",role="alert") A simple success alert—check it out!
+  div(class="alert alert-dark",role="alert") A simple darck alert—check it out!
+  div(class="alert alert-light",role="alert") A simple light alert—check it out!
+  p Example:
+  button(class="btn btn-primary",onclick='Oz.Alert.show("segundo", {className: "alert-primary",timeOut: 3500,classIcon: "fas fa-bell",});') Alert primary
+  p Code:
+  pre(class="prettyprint lang-html")   
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-primary&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple primary alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-secondary&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple secondary alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple success alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple danger alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple warning alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple info alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-light&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple light alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+    span(class="tag") &lt;div  class=&quot;alert alert-dark&quot; role=&quot;alert&quot;&gt;
+    span(class="str") A simple dark alert—check it out!
+    span(class="tag") &lt;/div&gt;
+    br
+  p Script:
+  pre(class="prettyprint lang-js")
+    span(class="tag") &lt;script&gt;
+    br
+    span(class="kwd") Oz.Alert.show(&quot;primero&quot;, {className: &quot;alert-primary&quot;,position: &quot;&quot;,timeOut: 3500,classIcon: &quot;fas fa-bell&quot;,});
+    br
+    span(class="str") Oz.Alert.show(&quot;segundo&quot;, {className: &quot;alert-primary&quot;,timeOut: 3500,classIcon: &quot;fas fa-bell&quot;,});
+    br
+    span(class="str") Oz.show(&quot;tercero&quot;, { className: &quot;alert-warning&quot;, position: &quot;topLeft&quot;, timeOut: 3500, classIcon: &quot;fas fa-bell&quot; });
+    br
+    span(class="str") Oz.show(&quot;cuarto&quot;, { className: &quot;alert-success&quot;, position: &quot;bottomLeft&quot;, timeOut: 3500, classIcon: &quot;fas fa-bell&quot; });
+    br
+    span(class="str") Oz.show(&quot;quinto&quot;, { className: &quot;alert-info&quot;, position: &quot;bottomRight&quot;, timeOut: 3500 });
+    br
+    span(class="str") Oz.Alert.show(&quot;primero&quot;, {className: &quot;alert-primary&quot;,position: &quot;&quot;,timeOut: 3500,classIcon: &quot;fas fa-bell&quot;,});
+    br
+    span(class="str") Oz.Alert.show(&quot;segundo&quot;, {className: &quot;alert-primary&quot;,timeOut: 3500,classIcon: &quot;fas fa-bell&quot;,});
+    br
+    span(class="str") Oz.show(&quot;tercero&quot;, { className: &quot;alert-warning&quot;, position: &quot;topLeft&quot;, timeOut: 3500, classIcon: &quot;fas fa-bell&quot; });
+    br
+    span(class="str") Oz.show(&quot;cuarto&quot;, { className: &quot;alert-success&quot;, position: &quot;bottomLeft&quot;, timeOut: 3500, classIcon: &quot;fas fa-bell&quot; });
+    br
+    span(class="str") Oz.show(&quot;quinto&quot;, { className: &quot;alert-info&quot;, position: &quot;bottomRight&quot;, timeOut: 3500 });
+    br
+    span(class="tag") &lt;/script&gt;
+    br

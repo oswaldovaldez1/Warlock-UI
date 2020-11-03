@@ -1,0 +1,187 @@
+.slider {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  & .prev,
+  & .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $dark-color-40;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 2;
+    &:hover {
+      color: $dark-color-60;
+    }
+  }
+  & .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  & .innder-slider {
+    position: relative;
+    width: 5000px;
+    background-color: red;
+    height: inherit;
+
+    & .item-slider {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.carousel {
+  position: relative;
+  &.fade {
+    & .carousel-item {
+      display: none;
+    }
+    & .carousel-item.active {
+      -webkit-animation-name: fadeSlide;
+      -webkit-animation-duration: 0.7s;
+      animation-name: fadeSlide;
+      animation-duration: 0.7s;
+    }
+  }
+
+  &.slide {
+    & .carousel-item {
+      &.right-left-1 {
+        -webkit-animation-name: sliderRL1;
+        -webkit-animation-duration: 0.7s;
+        animation-name: sliderRL1;
+        animation-duration: 0.7s;
+      }
+      &.right-left-2 {
+        -webkit-animation-name: sliderRL2;
+        -webkit-animation-duration: 0.7s;
+        animation-name: sliderRL2;
+        animation-duration: 0.7s;
+      }
+      &.left-right-1 {
+        -webkit-animation-name: sliderLR1;
+        -webkit-animation-duration: 0.7s;
+        animation-name: sliderLR1;
+        animation-duration: 0.7s;
+      }
+      &.left-right-2 {
+        -webkit-animation-name: sliderLR2;
+        -webkit-animation-duration: 0.7s;
+        animation-name: sliderLR2;
+        animation-duration: 0.7s;
+      }
+    }
+  }
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  & .prev,
+  & .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $dark-color-40;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    &:hover {
+      color: $dark-color-60;
+    }
+  }
+  & .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+  &.active {
+    display: block;
+  }
+}
+
+@-webkit-keyframes fadeSlide {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sliderLR1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes sliderLR2 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes sliderRL1 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes sliderRL2 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
